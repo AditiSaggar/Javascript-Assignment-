@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./assest/css/stylesheet.css">
+</head>
+
+<body>
+        <div class="container">
+            <div class="row">
+              <div class="cal-area col-sm-7 col-sm-offset-4">
+
+                    <div class="row">
+                        <input  class="area" type="text" placeholder="Enter the number" id="inputArea">
+                    </div>
+                
+                    <div class="row">
+                        <button class=" digit btn btn-default"onclick="calculate(7)">7</button>
+                        <button class="digit btn btn-default"onclick="calculate(8)">8</button>
+                        <button class="digit btn btn-default"onclick="calculate(9)">9</button>
+                        <button class="operator btn btn-default"onclick="calculate('*')">*</button>
+                    </div>  
+                           
+                    <div class="row">
+                        <button class="digit btn btn-default"onclick="calculate(4)">4</button>
+                        <button class="digit btn btn-default"onclick="calculate(5)">5</button>
+                        <button class="digit btn btn-default"onclick="calculate(6)">6</button>
+                        <button class="operator btn btn-default"onclick="calculate('-')">-</button>           
+                    </div>
+        
+                    <div class="row">
+                        <button class="digit btn btn-default"onclick="calculate(1)">1</button>
+                        <button class="digit btn btn-default"onclick="calculate(2)">2</button>
+                        <button class="digit btn btn-default"onclick="calculate(3)">3</button>
+                        <button class=" operator btn btn-default"onclick="calculate('%')">%</button>
+                        
+                  </div>
+
+                    <div class="row">
+                        <button class="digit btn btn-default"onclick="calculate(0)">0</button>
+                        <button class="operator btn btn-default" onclick="clr()">Clear</button>
+                        <button class=" operator btn btn-default"onclick="result('=')">=</button>
+                        <button class="operator btn btn-default"onclick="calculate('+')">+</button>
+
+                    </div>
+
+                </div>
+            </div>
+   
+        </div>
+
+        <script src="./assest/js/script.js"></script>
+        <script src="./assest/js/bootstrap.min.js"></script>
+        <script src="./assest/js/jquery.min.js"></script>
+    </body>
+</html>
